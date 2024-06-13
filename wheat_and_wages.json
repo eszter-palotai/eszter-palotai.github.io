@@ -4,18 +4,12 @@
   "width": 600,
   "height": 305,
   "padding": 5,
-
   "data": [
-    {
-      "name": "wheat",
-      "url": "data/wheat.json"
-    },
+    {"name": "wheat", "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/wheat.json"},
     {
       "name": "wheat-filtered",
       "source": "wheat",
-      "transform": [
-        { "type": "filter", "expr": "!!datum.wages" }
-      ]
+      "transform": [{"type": "filter", "expr": "!!datum.wages"}]
     },
     {
       "name": "monarchs",
@@ -29,7 +23,6 @@
       ]
     }
   ],
-
   "scales": [
     {
       "name": "x",
@@ -52,7 +45,6 @@
       "domain": {"data": "monarchs", "field": "commonwealth"}
     }
   ],
-
   "axes": [
     {
       "orient": "bottom",
@@ -76,7 +68,6 @@
       "labelFontStyle": "italic"
     }
   ],
-
   "marks": [
     {
       "type": "rect",
@@ -134,7 +125,7 @@
       }
     },
     {
-      "name" : "monarch_rects",
+      "name": "monarch_rects",
       "type": "rect",
       "from": {"data": "monarchs"},
       "encode": {
