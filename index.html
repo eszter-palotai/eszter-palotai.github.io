@@ -25,7 +25,7 @@
     <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
     <!-- Try swapping example1.css to another, and take a look at example1.css to see if you understand it-->
     <link rel="stylesheet" type="text/css" href="MyStyle.css">
-    <title> Test Eszter's portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
+    <title> Eszter's portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
 
     <!-- This is a link to the vega-lite which we're using to make graphs -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -45,16 +45,18 @@
             href="https://www.github.com/FM-ds">GitHub</a>
     </p>
     <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-      Welcome to my page! This HTML file provides a simple template for a portfolio page. It contains a header, a few sections, and a few charts. This header can act as a summary for your page.
+      Welcome to my page! 
     </h3>
 
+    <h4>
+        Let's take a look at UK trade.  
+    </h4>
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     <section>
         <div class="chart-description">
-            <h2>Section 1: A basic chart</h2>
+            <h2>Section 1: Real exports</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using the basic chart from the previous session.
+                This chart shows that exports in real terms are on the rise. We can also see that growh in real exports have been more volatile recently. 
             </p>
         </div>
         <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -62,10 +64,9 @@
 
     <section>
         <div class="chart-description"> <!-- we are grouping the title and description together so we can style them together -->
-            <h2>Section 2: Another Chart</h2>
+            <h2>Section 2: Real imports</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                This is a more advanced chart. We'll cover charts like this in more detail later today. Don't worry if you don't understand it yet.
-                Feel free to replace both charts with your own examples.
+                Real imports show a similar pattern to real exports. However, we witness a larger decline starting in 2020. Similarly to real exports, real imports seem to have recovered. 
             </p>
         </div>
         <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -104,7 +105,7 @@
         // This is a comment in JavaScript - it's a different language to HTML and CSS
 
         var figure_1_spec = "test3.json"; // We're storing the URL of the graph we want to display in a variable
-        var figure_2_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json";
+        var figure_2_spec = "real_imports.json";
         var fifure_3_spec = "wheat_and_wages.json"; 
         var fifure_4_spec = "UKmap.json"; 
 

@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text":"Real Exports",
+    "text":"Real Imports",
     "subtitle": ["Total trade, £million | Source: ONS via ECO-API"]
   },
 
